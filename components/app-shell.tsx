@@ -1,5 +1,5 @@
 import { JSX } from "preact";
-import { clsx } from "npm:clsx";
+import { clsx } from "clsx";
 
 interface AppShellProps extends JSX.HTMLAttributes<HTMLDivElement> {
   route: string;
