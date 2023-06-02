@@ -6,7 +6,7 @@ export const handler: Handlers = {
   async GET(_, ctx) {
     const kv = await Deno.openKv();
 
-    kv.set(["users"], "vinaybedre@gmail.com");
+    await kv.set(["users"], `vinaybedre@gmail.com ${new Date().toISOString()}`);
 
     const { value } = await kv.get(["users"]);
 
